@@ -11,5 +11,12 @@ void main() async {
 
   runApp(MaterialApp(
     home: Home(),
+    theme: ThemeData(
+      hintColor: Colors.amber,
+      primaryColor: Colors.white,
+      inputDecorationTheme: InputDecorationTheme(
+        enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.amber))
+      )
+    ),
   ));
 }
